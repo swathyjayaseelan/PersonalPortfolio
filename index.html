@@ -1,0 +1,555 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+  <!-- HOSTED -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
+  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- LOCAL -->
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+
+  <!-- HOSTED -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+  <script src="https://use.fontawesome.com/37fdb0bc84.js"></script>
+
+  <!-- LOCAL -->
+  <script src="scripts/pt.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/modal.js"></script>
+
+</head>
+<body>
+<div class="overflow-wrap">
+
+<!-- HOME -->
+  <div class="modal-wrap flex">
+    <div class="mask"></div>
+    <div class="modal" id="modal">
+      <div class="carousel-wrap">
+        <div class="window">
+          <div id="carousel">
+          <div class="slide"></div>
+          <div class="slide"></div>
+          <div class="slide"></div>
+          </div>
+          <i class="mdi mdi-chevron-left" id="prev"></i>
+          <i class="mdi mdi-chevron-right" id="next"></i>
+        </div>
+
+      </div>
+      <div class="info-box">
+        <div class="title"></div>
+        <div class="tag"></div>
+        <div class="detail"></div>
+        <a href="#" target="_blank"><div class="button"><i class="mdi mdi-open-in-new"></i>VIEW SITE</div></a>
+      </div>
+      <i class="close mdi mdi-close"></i>
+    </div>
+  </div>
+
+  <section id="home" class="flex height-fix">
+    <div id="pt" class="canvas"></div>
+
+    <div class="flex">
+<a id="rotator"><img src="styles/images/astranaut.gif" alt=""></a>
+      <div class="text">
+        Hello, I'm <span class="highlight">Swathy Jayaseelan</span>.
+        <br>
+        I'm a full-stack web developer.
+      </div>
+
+      <div class="button page-link" dest="about">View my work <i class="mdi mdi-arrow-right"></i></div>
+
+      <nav class="flex">
+        <div class="link-wrap">
+          <div class="active page-link" dest="home">home</div>
+          <div class="page-link" dest="about">about</div>
+
+          <div class="page-link" dest="portfolio">portfolio</div>
+          <div class="page-link" dest="blog">experience</div>
+
+          <div class="page-link" dest="https://www.linkedin.com/feed/">resume</div>
+        </div>
+        <i class="mdi mdi-menu"></i>
+      </nav>
+    </div>
+
+  </section>
+
+<!-- ABOUT -->
+  <section id="about">
+    <div class="container flex">
+
+      <div class="header waypoint" data-animation="slide-in-left">ABOUT</div>
+      <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+      <div class="flex row label-wrap">
+
+        <div class="flex bullet-wrap ">
+          <div class="hex-wrap waypoint" data-animation="flip-in-x">
+            <div class="hexagon">
+              <i class="mdi mdi-speedometer"></i>
+            </div>
+          </div>
+          <div class="waypoint" data-animation="fade-in">
+            <div class="label bold">Agility</div>
+            <div>A continuous learner with ability to quickly grasp new technologies.</div>
+          </div>
+        </div>
+
+        <div class="flex bullet-wrap " >
+          <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
+            <div class="hexagon">
+              <i class="mdi mdi-cellphone-link"></i>
+            </div>
+          </div>
+          <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+            <div class="label bold">Precision</div>
+            <div>I give attention to even minute details.</div>
+          </div>
+        </div>
+
+
+          <div class="flex bullet-wrap " >
+            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
+              <div class="hexagon">
+                <i class="mdi mdi-lightbulb-outline"></i>
+              </div>
+            </div>
+            <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+              <div class="label bold">Team Player</div>
+              <div>I work well with teams.</div>
+            </div>
+          </div>
+
+          <div class="flex bullet-wrap " >
+            <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
+              <div class="hexagon">
+                <i class="mdi mdi-rocket"></i>
+              </div>
+            </div>
+            <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+              <div class="label bold">Communicator</div>
+              <div>I am clear and concise in delivering my thoughts.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-wrapper flex row-gt-sm">
+        <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+          <img src="styles/images/swathy.jpg" class="me">
+          <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+          <div class="label bold">I am ...</div>
+          <div>
+            <p>A driven software professional with 3 years of software development and PM experience. I graduated from Cal State Fullerton with Master's in Software Engineering in Jan '18 and hold Udacity Nanodegrees in Front-end and Full Stack.</p>
+            <span class="page-link highlight" dest="contact">Let's connect.</span>
+          </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="container flex">
+<br>
+      <div class="header waypoint" data-animation="slide-in-left">SKILLS</div>
+      <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+<div class="skillsmobile">
+     <div class="bar flex">
+         <div class="bar fill" style="width:75%">
+           <div class="tag bold flex">HTML/CSS</div>
+         </div>
+         <span>80%</span>
+       </div>
+       <div class="bar flex">
+         <div class="bar fill" style="width:55%">
+           <div class="tag bold flex">JavaScript</div>
+         </div>
+         <span>50%</span>
+       </div>
+
+
+       <div class="bar flex">
+         <div class="bar fill" style="width:80%">
+           <div class="tag bold flex">Angular</div>
+         </div>
+         <span>80%</span>
+       </div>
+
+       <div class="bar flex">
+         <div class="bar fill" style="width:65%">
+           <div class="tag bold flex">NodeJS</div>
+         </div>
+         <span>70%</span>
+       </div>
+
+       <div class="bar flex">
+         <div class="bar fill" style="width:55%">
+           <div class="tag bold flex">React</div>
+         </div>
+         <span>50%</span>
+       </div>
+
+       <div class="bar flex">
+         <div class="bar fill" style="width:55%">
+           <div class="tag bold flex">DeeplearnJS</div>
+         </div>
+         <span>50%</span>
+       </div>
+       <div class="bar flex">
+         <div class="bar fill" style="width:55%">
+           <div class="tag bold flex">Python</div>
+         </div>
+         <span>50%</span>
+       </div>
+
+
+       <div class="bar flex">
+         <div class="bar fill" style="width:65%">
+           <div class="tag bold flex">Flask</div>
+         </div>
+         <span>70%</span>
+       </div>
+
+       <div class="bar flex">
+         <div class="bar fill" style="width:55%">
+           <div class="tag bold flex">Django</div>
+         </div>
+         <span>50%</span>
+       </div>
+
+       <div class="bar flex">
+         <div class="bar fill" style="width:60%">
+           <div class="tag bold flex">MongoDB</div>
+         </div>
+         <span>60%</span>
+       </div>
+
+       <div class="bar flex">
+         <div class="bar fill" style="width:45%">
+           <div class="tag bold flex">SQL</div>
+         </div>
+         <span>40%</span>
+       </div>
+       <div class="bar flex">
+         <div class="bar fill" style="width:45%">
+           <div class="tag bold flex">AWS</div>
+         </div>
+         <span>40%</span>
+       </div>
+       <div class="bar flex">
+         <div class="bar fill" style="width:45%">
+           <div class="tag bold flex">Agile</div>
+         </div>
+         <span>40%</span>
+       </div>
+
+     </div>
+
+<div class="flex bullet-wrap skillsbig">
+    <div  class=" waypoint"  data-delay=".2s" data-animation="slide-in-left">
+
+<span><img class='responsive-img' src="styles/images/html.jpg" alt=""></span>
+<span><img class='responsive-img'src="styles/images/bootstrap.png" alt=""></span>
+<span><img class='responsive-img'src="styles/images/angularlogo.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/ember.svg" alt=""></span>
+<span><img class='responsive-img'src="styles/images/react.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/node.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/express.jpg" alt=""></span>
+<span><img class='responsive-img'src="styles/images/python.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/flask.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/django-badge.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/mongo.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/postgresql.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/awslogo.jpg" alt=""></span>
+<span><img class='responsive-img' src="styles/images/heroku.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/mlab.png" alt=""></span>
+
+<span><img class='responsive-img' src="styles/images/github.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/webpack.png" alt=""></span>
+<span><img class='responsive-img' src="styles/images/grunt.svg" alt=""></span>
+
+</div>
+</div>
+    </div>
+  </section>
+
+<!-- PORTFOLIO -->
+  <section class="flex" id="portfolio">
+
+    <div class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
+    <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+
+    <div class="filter-wrap waypoint" data-animation="fade-in">
+      <div class="flex row">
+        <div class="filter" data-filter="all">ALL</div>
+        <div class="filter" data-filter=".full">FUll-Stack</div>
+        <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+        <div class="filter" data-filter=".js">JAVASCRIPT</div>
+      </div>
+      <div class="float-bar">
+        <div class="flex row">
+          <div class="filter" data-filter="all">ALL</div>
+          <div class="filter" data-filter=".full">FULL</div>
+          <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+          <div class="filter" data-filter=".js">JAVASCRIPT</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gallery" class="container flex row wrap waypoint">
+      <div class="mix full" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">PayItForward</div>
+            <span class="highlight">MEAN Stack</span>
+              <p>Location based volunteering app</p>
+          </div>
+          <div class="button" id="payitforward">LEARN MORE</div>
+        </div>
+      </div>
+
+
+      <div class="mix full" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">EasyBuy</div>
+            <span class="highlight">Django</span>
+            <p>ECommerce Website</p>
+          </div>
+          <div class="button" id="easybuy">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix node" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Neighbourhood Map</div>
+            <span class="highlight">KnockoutJs</span>
+            <p>Interactive tourist attractions search app</p>
+          </div>
+          <div class="button" id="neighbourhood">LEARN MORE</div>
+        </div>
+      </div>
+      <div class="mix rails" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Movie Trailer Website</div>
+            <span class="highlight">Flask</span>
+            <p>App to view movie trailers</p>
+          </div>
+          <div class="button" id="trailer">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Classic Arcade Game</div>
+            <span class="highlight">JQuery, JavaScript</span>
+            <p>Interactive Game</p>
+          </div>
+          <div class="button" id="game">LEARN MORE</div>
+        </div>
+      </div>
+
+
+
+      <div class="mix full" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Items Catalog</div>
+            <span class="highlight">Flask</span>
+            <p>Content Management System</p>
+          </div>
+          <div class="button" id="catalog">LEARN MORE</div>
+        </div>
+      </div>
+
+
+      <div class="mix node" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Items Catalog</div>
+            <span class="highlight">Flask</span>
+            <p>Content Management System</p>
+          </div>
+          <div class="button" id="catalog">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix node" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Items Catalog</div>
+            <span class="highlight">Flask</span>
+            <p>Content Management System</p>
+          </div>
+          <div class="button" id="catalog">LEARN MORE</div>
+        </div>
+      </div>
+
+      <div class="mix node" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Items Catalog</div>
+            <span class="highlight">Flask</span>
+            <p>Content Management System</p>
+          </div>
+          <div class="button" id="catalog">LEARN MORE</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+<!-- BLOG -->
+  <section class="flex" id="blog">
+    <div class="header waypoint" data-animation="slide-in-left">PROFILE</div>
+    <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+    <div class="container flex prof">
+
+
+
+      <div class="flex row wrap">
+      <div data-animation="slide-in-left"  class="label bold waypoint profile-title">
+        EDUCATION
+        <span><img src="styles/images/hat.jpg" class='profile-logo' alt=""></span>
+      </div>
+<div data-animation="slide-in-right"  class="profile waypoint">
+<ul>
+  <li>Master's in Software Engineering, California State University, Fullerton - Jan 2018</li>
+  <li>Bachelor'sof Technology in Electrical and Electronics Engineering, SASTRA University, India - May 2012</li>
+</ul>
+</div>
+
+
+      </div>
+      <div class="flex row wrap">
+        <div data-animation="slide-in-left"   class="label bold waypoint profile-title">
+          CERTIFICATION
+          <span><img src="styles/images/Certficates.jpg" class='profile-logo' alt=""></span>
+        </div>
+        <div data-animation="slide-in-right"  class="waypoint profile">
+<ul>
+  <li>Full-Stack Web Developer Nanodegree, Udacity - Sep 2017</li>
+  <li>Front-End Web Developer Nanodegree, Udacity - Jan 2017</li>
+  <li>Diploma in Programming, C, C++, Java</li>
+</ul>
+        </div>
+      </div>
+      <div class="flex row wrap">
+        <div data-animation="slide-in-left"   class="label bold waypoint profile-title">
+          WORK
+          <span><img src="styles/images/work.png" class='profile-logo' alt=""></span>
+        </div>
+        <div data-animation="slide-in-right"  class="waypoint profile">
+<ul>
+  <li>Software Engineer Volunteer, One Community Global- (Mar 18 - Present)</li>
+  <li>Sofware Engineer Volunteer, SNAC - (Mar 18 - Present)</li>
+  <li>Project Manager, Adam & Associates</li>
+  <li>Systems Engineer, Tata Consultancy Services Ltd. </li>
+</ul>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="contact">
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+      <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+    </svg>
+    <div class="container flex">
+      <div class="header waypoint" data-animation="slide-in-left">TESTIMONIALS</div>
+      <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+
+    </divx>
+  </section>
+  <!-- CONTACT -->
+
+
+  <footer>
+    <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+    <div class="icon-wrap flex row">
+      <a href="">
+        <div >
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+      </a>
+      <a href="">
+        <div class="flex icon" id="icon-3">
+          <i class="mdi mdi-facebook"></i>
+        </div>
+      </a>
+      <a href="">
+        <div class="flex icon" id="icon-4">
+          <i class="mdi mdi-instagram"></i>
+        </div>
+      </a>
+      <a href="">
+        <div class="flex icon" id="icon-5">
+          <i class="mdi mdi-codepen"></i>
+        </div>
+      </a>
+    </div>
+
+  </footer>
+
+</div>
+
+<div id="preload">
+   <img src="styles/images/astranaut.gif"/>
+   <img src="styles/images/angular.png"/>
+   <img src="styles/images/aws.png"/>
+   <img src="styles/images/awslogo.jpg"/>
+   <img src="styles/images/hat.jpg"/>
+   <img src="styles/images/html.jpg"/>
+   <img src="styles/images/swathy.jpg"/>
+   <img src="styles/images/resume.png"/>
+   <img src="styles/images/mlab.png"/>
+
+
+</div>
+
+</body>
+</html>
+
+<script src="scripts/canvas.js"></script>
