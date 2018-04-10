@@ -217,17 +217,21 @@ animation: animatebackground 60s linear infinite;
   .profile {
 
     padding: 10px;
-border: 2px solid lightgray;
+border: 2px solid #00CED1;
 border-radius: 15px;
 -moz-border-radius: 15px;
 
-margin: 80px;
+margin: 50px;
 font-size: 16px;
   }
   .profile-logo {
     width: 50px;
     height: 50px;
   }
+
+  /*recommendation*/
+
+
 .button {
   padding: 10px 20px;
   border: 2px solid #fff;
@@ -386,7 +390,7 @@ nav {
   position: relative;
   top: 0; }
 
-.slide {
+.slide1 {
   height: 250px;
   cursor: pointer;
   float: left;
@@ -879,15 +883,15 @@ footer {
     position: relative;
     text-align: center;
     margin: 0 15px;
-    background: #262F38;
+    /*background: #262F38;*/
     font-size: 18pt; }
   footer .icon-wrap .mdi {
     text-align: center;
-    color: #fff; }
+  /*color: #fff;*/ }
     footer .icon-wrap .mdi.mdi-codepen {
       font-size: 20pt; }
   footer .icon-wrap .icon:hover {
-    background: #04C2C9;
+    /*background: #04C2C9;*/
     box-shadow: 0 0 0 3px rgba(4, 94, 201, 0.1);
     transform: scale(0.9); }
     footer .icon-wrap .icon:hover .mdi {
@@ -946,7 +950,7 @@ footer {
     height: 100px;
     width: 100px; }
 
-  .slide, .carousel-wrap {
+  .slide1, .carousel-wrap {
     height: 450px; }
 
   .mdi-chevron-left, .mdi-chevron-right {

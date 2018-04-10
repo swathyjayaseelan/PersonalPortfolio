@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  // Can also be used with $(document).ready()
+  
+    $('.flexslider').flexslider({
+      animation: "slide",
+      rtl: true
+    });
 
   // MODAL
   var modalText = {
