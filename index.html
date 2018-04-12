@@ -7,11 +7,14 @@
 
   <!-- HOSTED -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
-  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+  <link href="styles/MaterialDesign-Webfont-master/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
   <!-- LOCAL -->
   <link rel="stylesheet" href="styles/style.css">
+
   <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 
   <!-- HOSTED -->
@@ -64,12 +67,12 @@
     <div class="flex">
 <a id="rotator"><img src="styles/images/astranaut.gif" alt=""></a>
       <div class="text">
-        Hello, I'm <span class="highlight">Swathy Jayaseelan</span>.
+        Hi, I'm <span class="highlight">Swathy Jayaseelan</span>.
         <br>
         I'm a full-stack web developer.
       </div>
 
-      <div class="button page-link" dest="about">View my work <i class="mdi mdi-arrow-right"></i></div>
+      <div class="button page-link" dest="about">About me </div>
 
       <nav class="flex">
         <div class="link-wrap">
@@ -78,6 +81,9 @@
 
           <div class="page-link" dest="portfolio">portfolio</div>
           <div class="page-link" dest="blog">profile</div>
+          <div style="text-align: right;">
+          <a href="http://www.google.com">resume <i class="mdi mdi-file-cloud"></i></a>
+          </div>
 
         </div>
         <i class="mdi mdi-menu"></i>
@@ -95,54 +101,59 @@
 
       <div class="flex row label-wrap">
 
+<div class="flex row-gt-sm">
         <div class="flex bullet-wrap ">
           <div class="hex-wrap waypoint" data-animation="flip-in-x">
-            <div class="hexagon">
-              <i class="mdi mdi-speedometer"></i>
+            <div>
+            <img class='hexagon' src="styles/images/diamond.jpg" alt="">
             </div>
           </div>
           <div class="waypoint" data-animation="fade-in">
-            <div class="label bold">Agility</div>
-            <div>A continuous learner with ability to quickly grasp new technologies.</div>
+            <div class="label bold">Spirited</div>
+            <div>I very much enjoy doing cool stuff!</div>
           </div>
+
         </div>
 
         <div class="flex bullet-wrap " >
           <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".2s">
-            <div class="hexagon">
-              <i class="mdi mdi-cellphone-link"></i>
-            </div>
-          </div>
-          <div class="waypoint" data-animation="fade-in" data-delay=".2s">
-            <div class="label bold">Precision</div>
-            <div>I give attention to even minute details.</div>
-          </div>
+            <div>
+          <img class='hexagon' src="styles/images/diamond.jpg" alt="">
         </div>
+          </div>
+          <div class="waypoint" data-animation="fade-in">
+            <div class="label bold">Agile</div>
+            <div>A continuous learner who can quickly grasp new technologies</div>
+          </div>
 
-
+        </div>
+</div>
+<div class="flex row-gt-sm">
           <div class="flex bullet-wrap " >
             <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".4s">
-              <div class="hexagon">
-                <i class="mdi mdi-lightbulb-outline"></i>
+              <div >
+                <img class='hexagon' src="styles/images/diamond.jpg" alt="">
               </div>
             </div>
-            <div class="waypoint" data-animation="fade-in" data-delay=".4s">
-              <div class="label bold">Team Player</div>
-              <div>I work well with teams.</div>
+            <div class="waypoint" data-animation="fade-in">
+              <div class="label bold">Precision</div>
+              <div>I give attention to minute details</div>
             </div>
+
           </div>
 
           <div class="flex bullet-wrap " >
             <div class="hex-wrap waypoint" data-animation="flip-in-x" data-delay=".6s">
-              <div class="hexagon">
-                <i class="mdi mdi-rocket"></i>
+              <div>
+              <img class='hexagon' src="styles/images/diamond.jpg" alt="">
               </div>
             </div>
-            <div class="waypoint" data-animation="fade-in" data-delay=".6s">
-              <div class="label bold">Communicator</div>
-              <div>I am clear and concise in delivering my thoughts.</div>
+            <div class="waypoint" data-animation="fade-in">
+              <div class="label bold">Lucid</div>
+              <div>I communicate my thoughts clearly</div>
             </div>
           </div>
+        </div>
         </div>
       </div>
 
@@ -294,22 +305,22 @@
     <div class="filter-wrap waypoint" data-animation="fade-in">
       <div class="flex row">
         <div class="filter" data-filter="all">ALL</div>
-        <div class="filter" data-filter=".full">FUll-Stack</div>
-        <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+        <div class="filter" data-filter=".full">FULL-STACK</div>
         <div class="filter" data-filter=".js">JAVASCRIPT</div>
+        <div class="filter" data-filter=".python">PYTHON</div>
       </div>
       <div class="float-bar">
         <div class="flex row">
           <div class="filter" data-filter="all">ALL</div>
-          <div class="filter" data-filter=".full">FULL</div>
-          <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+          <div class="filter" data-filter=".full">FULL-STACK</div>
           <div class="filter" data-filter=".js">JAVASCRIPT</div>
+          <div class="filter" data-filter=".python">PYTHON</div>
         </div>
       </div>
     </div>
 
     <div id="gallery" class="container flex row wrap waypoint">
-      <div class="mix full" data-my-order="1">
+      <div class="mix full js" data-my-order="1">
         <div>
           <div class="card"></div>
           <div class="text">
@@ -322,7 +333,7 @@
       </div>
 
 
-      <div class="mix full" data-my-order="1">
+      <div class="mix full python" data-my-order="1">
         <div>
           <div class="card"></div>
           <div class="text">
@@ -334,7 +345,7 @@
         </div>
       </div>
 
-      <div class="mix node" data-my-order="1">
+      <div class="mix js" data-my-order="1">
         <div>
           <div class="card"></div>
           <div class="text">
@@ -345,7 +356,7 @@
           <div class="button" id="neighbourhood">LEARN MORE</div>
         </div>
       </div>
-      <div class="mix rails" data-my-order="1">
+      <div class="mix python" data-my-order="1">
         <div>
           <div class="card"></div>
           <div class="text">
@@ -370,8 +381,19 @@
       </div>
 
 
+      <div class="mix js" data-my-order="1">
+        <div>
+          <div class="card"></div>
+          <div class="text">
+            <div class="bold">Emotion Detector</div>
+            <span class="highlight">TensorFlow.js</span>
+            <p>Interactive Game</p>
+          </div>
+          <div class="button" id="game">LEARN MORE</div>
+        </div>
+      </div>
 
-      <div class="mix full" data-my-order="1">
+      <div class="mix full python" data-my-order="1">
         <div>
           <div class="card"></div>
           <div class="text">
@@ -384,42 +406,55 @@
       </div>
 
 
-      <div class="mix node" data-my-order="1">
+      <div class="mix js" data-my-order="1">
         <div>
           <div class="card"></div>
           <div class="text">
-            <div class="bold">Items Catalog</div>
-            <span class="highlight">Flask</span>
+            <div class="bold">AngularJS Developers Directory</div>
+            <span class="highlight">AngularJS</span>
             <p>Content Management System</p>
           </div>
           <div class="button" id="catalog">LEARN MORE</div>
         </div>
       </div>
 
-      <div class="mix node" data-my-order="1">
+      <div class="mix js" data-my-order="1">
         <div>
           <div class="card"></div>
           <div class="text">
-            <div class="bold">Items Catalog</div>
-            <span class="highlight">Flask</span>
+            <div class="bold">Interactive Resume</div>
+            <span class="highlight">JQuery</span>
             <p>Content Management System</p>
           </div>
           <div class="button" id="catalog">LEARN MORE</div>
         </div>
       </div>
 
-      <div class="mix node" data-my-order="1">
+      <div class="mix python" data-my-order="1">
         <div>
           <div class="card"></div>
           <div class="text">
-            <div class="bold">Items Catalog</div>
-            <span class="highlight">Flask</span>
+            <div class="bold">Data Analysis Reporting tool</div>
+            <span class="highlight">PostgreSQL, Python</span>
             <p>Content Management System</p>
           </div>
           <div class="button" id="catalog">LEARN MORE</div>
         </div>
+      </div>
+
+
+    <div class="mix python" data-my-order="1">
+      <div>
+        <div class="card"></div>
+        <div class="text">
+          <div class="bold">Tournament Database</div>
+          <span class="highlight">PostgreSQL, Python</span>
+          <p>Content Management System</p>
+        </div>
+        <div class="button" id="catalog">LEARN MORE</div>
       </div>
     </div>
+  </div>
 
   </section>
 
@@ -431,7 +466,7 @@
 
 
 
-      <div class="flex row wrap">
+      <div class="flex row wrap profileflex">
       <div data-animation="slide-in-left"  class="label bold waypoint profile-title">
         EDUCATION
         <span><img src="styles/images/hat.jpg" class='profile-logo' alt=""></span>
@@ -445,7 +480,8 @@
 
 
       </div>
-      <div class="flex row wrap">
+
+      <div class="flex row wrap profileflex">
         <div data-animation="slide-in-left"   class="label bold waypoint profile-title">
           CERTIFICATION
           <span><img src="styles/images/Certficates.jpg" class='profile-logo' alt=""></span>
@@ -458,7 +494,8 @@
 </ul>
         </div>
       </div>
-      <div class="flex row wrap">
+
+      <div class="flex row wrap profileflex">
         <div data-animation="slide-in-left"   class="label bold waypoint profile-title">
           WORK
           <span><img src="styles/images/work.png" class='profile-logo' alt=""></span>
@@ -473,30 +510,77 @@
         </div>
       </div>
 
-      </div>
-      <div class="">
-        <div class="flexslider" style="direction:rtl">
-        <ul class="slides">
-          <li>
-            1
-          </li>
-          <li>
-      2
-          </li>
-          <li>
-          3
-          </li>
-          <li>
-          4
-          </li>
-          <!-- items mirrored twice, total of 12 -->
-        </ul>
-      </div>
-      </div>
+
     </div>
 
+<h4 class="label bold">Testimonials</h4>
+<h6>[Source: Linkedin]</h6>
+<div class="w3-content w3-display-container">
+  <div class="mySlides" style="width: 100%;">
+    <i>"I had the honor of teaching Swathy Jayaseelan in the course of Modern Software Management at
+    Cal State Fullerton AMSE program during fall 2016. I happened to recognize that Swathy maintains
+     her curiosity of learning new subjects in software management and asked right questions all the time.
+     I believe curiosity is an important trait of an excellent engineer. The project ‘Foodie24’ she contributed
+      is very creative and well executed by her team. I think it can be even turned to a real product.
+      Swathy’s positive learning attitude and excellent work in the class made me think she will be ready
+       for challenges in her career."</i>
+       <br>
+       <div class="testimonial-name">
+         Bill-lo<br/>
+         Senior Principal Architect, AT&T
+       </div>
+  </div>
+  <div class="mySlides" style="width: 100%;">
+    "Swathy is a bright and hard-working individual in her academic pursuits.
+    Above all, I was constantly impressed by swath’s ability to multitask and to solve
+    any kind of problem smoothly and efficiently as an engineer. Of course, her enthusiasm
+    and spirited attitude was contagious! Swathy would be a true asset for any positions requiring
+    a professional and confident attitude.
+     I look forward to watching her develop her career and to witness her many upcoming accomplishments"<br/>
+     <div class="testimonial-name">
+       Naga Raviteja Malladi<br/>
+      Technical Agile Coach/Product Manager, Arrowlytics
+     </div>
+  </div>
+
+  <div class="mySlides" style="width: 100%;">
+    "I had a great experience working with Swathy.
+    I would say that Swathy is very responsible and committed
+    towards the academic projects. She loves to take initiative.
+    She has a strong knowledge and wide experience not limited to requirement,
+    testing process, C, C++, JAVA, HTML, CSS, JavaScript.. I would say that she is
+    very dedicated towards her success.
+P.S. For further discussion on Project Successes with Swathy, please contact myself @ 1-714-312-8701"<br/>
+<div class="testimonial-name">
+  Jabeen Shazia<br/>
+ UAT Onsite Lead, HCL America Inc.
+</div>
+  </div>
 
 
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">prev</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">next</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
   </section>
 
 
@@ -504,7 +588,7 @@
 
 
   <footer>
-    <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+    <!--<i class="mdi mdi-chevron-double-up page-link" dest="home"></i>-->
 
     <div class="icon-wrap flex row">
       <a href="http://www.linkedin.com/in/swathy-jayaseelan">
@@ -542,6 +626,7 @@
    <img src="styles/images/swathy.jpg"/>
    <img src="styles/images/resume.png"/>
    <img src="styles/images/mlab.png"/>
+   <img src="styles" alt="">
 
 
 </div>

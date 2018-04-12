@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Raleway';
-  src: url("../fonts/Raleway-Regular.ttf"); }
+  src: url("MaterialDesign-Webfont-master/fonts/Raleway-Regular.ttf"); }
 @font-face {
   font-family: 'Raleway-semibold';
-  src: url("../fonts/Raleway-SemiBold.ttf"); }
+  src: url("MaterialDesign-Webfont-master/fonts/Raleway-SemiBold.ttf"); }
 @font-face {
   font-family: 'Raleway-bold';
-  src: url("../fonts/Raleway-Bold.ttf"); }
+  src: url("MaterialDesign-Webfont-master/fonts/Raleway-Bold.ttf"); }
   @keyframes animStar {
     from
       transform: translateY(0px)
@@ -115,7 +115,9 @@
     height; 20px;
     margin-right: 8px;
 }
-
+.mySlides {
+  padding: 15px;
+}
 
 a#rotator {
 
@@ -141,6 +143,10 @@ a#rotator img {
 .container.flex.prof {
   flex-direction: column;
   align-items: flex-start;
+
+}
+.flex.row.wrap.profileflex {
+  justify-content: flex-start;
 }
 
 a {
@@ -208,6 +214,8 @@ animation: animatebackground 60s linear infinite;
    from {background-position: 0 0;}
    to {background-position: -1000px 0;}
   }
+
+
   .badges {
     width: 80px;
     height: 80px;
@@ -230,8 +238,19 @@ font-size: 16px;
   }
 
   /*recommendation*/
-
-
+.w3-content {
+  text-align: justify;
+  padding: 10px;
+}
+.w3-display-left {
+  left: -5%;
+}
+.w3-display-right {
+  right: -5%;
+}
+.testimonial-name {
+  text-align: right;
+}
 .button {
   padding: 10px 20px;
   border: 2px solid #fff;
@@ -252,6 +271,7 @@ font-size: 16px;
 	width: 95%
 
   }
+/* carousel */
 
 
 .flex {
@@ -273,11 +293,17 @@ font-size: 16px;
   height: 80px; }
 
 .hexagon {
-  background-color: #04C2C9;
-  height: 100%;
-  width: calc(100% * 0.57735);
-  display: inline-block; }
 
+  height: 100%;
+  width: calc(100% * 0.9);
+  display: inline-block;
+  -webkit-animation:spin 10s linear infinite;
+  -moz-animation:spin 10s linear infinite;
+  animation:spin 10s linear infinite; }
+
+  @-moz-keyframes spin { 100% { -moz-transform: rotateY(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotateY(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
 .hexagon:before {
   position: absolute;
   top: 0;
@@ -364,7 +390,7 @@ nav {
       nav .link-wrap div:first-child {
         padding: 25px 20px 12px 20px; }
       nav .link-wrap div:hover {
-        color: #E31B6D; }
+        color: #00CED1; }
   nav .mdi-menu {
     position: absolute;
     right: 5vw;
@@ -373,7 +399,7 @@ nav {
     line-height: 36pt;
     top: 0; }
   nav .active {
-    color: #E31B6D; }
+  color: #00CED1; }
 
 .carousel-wrap {
   position: relative;
@@ -690,8 +716,9 @@ section {
         font-size: 13pt;
         padding: 7px 0; }
       section:nth-of-type(3) #gallery .mix {
-
-        position: relative; }
+display:none;
+        position: relative;
+       }
         section:nth-of-type(3) #gallery .mix .waypoint {
           background: #fff; }
         section:nth-of-type(3) #gallery .mix .button:hover {
@@ -704,21 +731,21 @@ section {
         section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
           background: url("images/neighbourhoodmap.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
-          background: url("images/game.png") center center/cover; }
-        section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
           background: url("images/trailer.png") center center/cover; }
+        section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
+          background: url("images/game.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
-          background: url("images/items.png") center center/cover; }
+          background: url("images/deeplearn.jpeg") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
-          background: url("images/angular.png") center center/cover; }
+          background: url("images/items.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
-          background: url("images/resume.png") center center/cover; }
+          background: url("images/angular.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
-          background: url("images/logs.png") center center/cover; }
+          background: url("images/resume.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
-          background: url("../img/thumb-10.jpg") center center/cover; }
+          background: url("images/logsanalysis.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
-          background: url("../img/thumb-11.jpg") center center/cover; }
+          background: url("images/loganalysis.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
           background: url("../img/thumb-12.jpg") center center/cover; }
         section:nth-of-type(3) #gallery .mix .card {

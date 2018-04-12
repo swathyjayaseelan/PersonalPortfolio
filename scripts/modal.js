@@ -1,17 +1,21 @@
 $(document).ready(function(){
   // Can also be used with $(document).ready()
-  
-    $('.flexslider').flexslider({
-      animation: "slide",
-      rtl: true
-    });
+
+
 
   // MODAL
   var modalText = {
     payitforward: {
       title: 'PayItForward.com',
       tag: 'LOCATION BASED VOLUNTEER CONNECT.',
-      detail: 'Roambi provides analytics, reporting, and business intelligence for companies to use on the go. A Wordpress hosted site written in PHP and Javascript with Hubspot Integration.',
+      detail: 'A location based web app to connect volunteers to opportunities and  hospitals to'+
+       'eligible donors in the nearby locality. Whenever a registered Volunteer logs in, the algorithm will'+
+      " automatically search in the DB for events that would interest the volunteer and display them in the Volunteer's"+
+      "homepage."+
+
+
+      ' ** A special feature is the donor search algorithm that searches for blood donors in the nearby locality and alerts them via sms message **',
+      'tech':'HTML, CSS,  MongoDB, ExpressJS, AngularJS, NodeJS, Bootstrap, Twilio, Facebook APIs, Google Maps API',
       link: 'http://www.roambi.com'
     },
     easybuy: {
