@@ -6,43 +6,69 @@ $(document).ready(function(){
   // MODAL
   var modalText = {
     payitforward: {
-      title: 'PayItForward.com',
+      title: 'PayItForward',
       tag: 'LOCATION BASED VOLUNTEER CONNECT.',
       detail: 'A location based web app to connect volunteers to opportunities and  hospitals to'+
-       'eligible donors in the nearby locality. Whenever a registered Volunteer logs in, the algorithm will'+
-      " automatically search in the DB for events that would interest the volunteer and display them in the Volunteer's"+
-      "homepage."+
-
-
+       ' eligible donors in the nearby locality. It removes the extra effort volunteers have to put in to search for opportunities by automatically matching their preference and alerting them.'+
       ' ** A special feature is the donor search algorithm that searches for blood donors in the nearby locality and alerts them via sms message **',
       'tech':'HTML, CSS,  MongoDB, ExpressJS, AngularJS, NodeJS, Bootstrap, Twilio, Facebook APIs, Google Maps API',
-      link: 'http://www.roambi.com'
+      link: 'https://payitforwardversion1.herokuapp.com/#!/home'
     },
     easybuy: {
       title: 'EasyBuy',
-      tag: 'PERFORMANCE METRICS.',
-      detail: 'Walker Tracker offers goal management, fitness tracking, and team competitions to companies for internal use. A Ruby on Rails and Javascript companion site for the Walker Tracker App. Features visual metrics and gamified progression system.',
+      tag: 'ECOMMERCE WEBSITE.',
+      detail: 'A responsive E-Commerce Website in Python with Django framework to sell books. Customer payment is handled with Stripe APIs.',
+      link: 'http://swathyjayaseelan.pythonanywhere.com'
+
     },
     neighbourhood: {
-      title: 'Powur.com',
-      tag: 'MULTI-LEVEL MARKETING.',
-      detail: 'Powur is a multi-level marketing platform for lead generation, recruitment, and team building. Built with Ruby on Rails and Angular-UI. Makes use of Angular-material for front-end visuals. Features complex user tree heiarchy and commission system.',
-      link: 'http://www.powur.com/with/42'
+      title: 'Neighbourhood Map',
+      tag: 'INTERACTIVE SEARCH MAP.',
+      detail: 'A single-page web application using the Knockout framework, that displays an interactive Google Map of an area and various points of interest. Users can search all included landmarks and, when selected, additional information about a landmark is presented from Yelp API.',
+      link: 'https://swathyjayaseelan.github.io/Neighbourhood-Map/'
     },
     trailer: {
-      title: 'MyStand',
-      tag: 'CROWD-FUNDED CHARITY.',
-      detail: 'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
+      title: 'Movie Trailer Website',
+      tag: 'WATCH TRAILERS NOW.',
+      detail: 'A python app using Flask to display my favorite movies, including box art imagery and trailers with feature to review the movies. Hover over the image to read the story line.!.'
     },
     game: {
-      title: 'NeverSurrender',
-      tag: 'ALS AWARENESS.',
-      detail: 'NeverSurrender is a platform for the new ALS foundation mobile app in hopes to raise awareness and research funding to fight ALS. Pure JavaScript marketing site to promote the new ALS NeverSurrender app.',
+      title: 'Classic Arcade Game',
+      tag: 'ARCADE GAME CLONE.',
+      detail: 'An HTML5 Canvas powered video game using the best practices in Object Oriented JavaScript. Help the boy to get to the water without getting hit by the bugs.',
+      link:'https://swathyjayaseelan.github.io/Classic-Arcade-Game/'
+    },
+    emotion: {
+      title: 'Emotion Detector',
+      tag: 'DEEPLEARNING MODEL DEPLOYMENT',
+      detail: 'Deployed a deeplearning model to train and infer emotions captured on a live webcam within the browser using TensorFlow.js library.'
     },
     catalog : {
-      title: 'The Mall',
-      tag: 'PEER GUIDED SHOPPING.',
-      detail: 'The Mall is a place to follow the latest fashion purchases of your friends and favorite celebrities. Built with Node.js and Handlebars. Features the ability to import thousands of top brands products into one shopping site.',
+      title: 'Items Catalog',
+      tag: 'CONTENT MANAGEMENT SYSTEM.',
+      detail: 'A Python module using Flask framework to get a list of categories from SQLite database and present it in a web interface. Users can login using their Google+ accounts and add new items to category, update or delete the items that they have created. The pages that allow CRUD operations are protected so that only authenticated and authorized users can access and perform changes. It is hosted on AWS.'
+    },
+    resume : {
+      title: 'Interactive Resume',
+      tag: 'RESUME TEMPLATE.',
+      detail: 'An interactive resume application that reads the resume content from a JSON file and dynamically displays that content within a template.',
+      link: 'https://swathyjayaseelan.github.io/Interactive-Resume/'
+    },
+    developer : {
+      title: 'AngularJS Developers Directory',
+      tag: 'HIRE FREELANCERS',
+      detail: 'An AngularJS application to display a list of freelance developers with CRUD functionality (add new developer to directory, view the details, update and remove a developer from directory) and integrated with feature to contact a developer.',
+      link: 'https://swathyjayaseelan.github.io/AngularJS-developers-directory/'
+    },
+    tournament : {
+      title: 'Tournament Database',
+      tag: 'SWISS BASED NON-ELIMINATION TOURNAMENT.',
+      detail: 'A database backed application that uses PostgreSQL database to record the players, matches and winners of a Swiss-based non-elimination tournament. Python is used to query the database and pair the players for matches based on the number of wins of each player.'
+    },
+    reporting : {
+      title : 'Data Analysis Reporting Tool',
+      tag: 'REPORTING TOOL.',
+      detail: 'A large Postgresql database with over a million rows of articles and readers is explored by building complex SQL queries. An internal reporting tool is built to explore the data and report the findings like the most viewed articles, popular authors so that business decisions can be made.'
     }
   };
 
@@ -126,9 +152,12 @@ $(document).ready(function(){
     $.each($('#modal li'), function(index, value ) {
       $(this).text(modalText[id].bullets[index]);
     });
+
+    console.log(id);
     $.each($('#modal .slide'), function(index, value) {
+      console.log(index);
       $(this).css({
-        background: "url('img/slides/" + id + '-' + index + ".jpg') center center/cover",
+        background: "url('styles/images/slides/" + id + '-' + index + ".png') center center/cover",
         backgroundSize: 'cover'
       });
 

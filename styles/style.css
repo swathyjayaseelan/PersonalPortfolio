@@ -416,7 +416,7 @@ nav {
   position: relative;
   top: 0; }
 
-.slide1 {
+.slide {
   height: 250px;
   cursor: pointer;
   float: left;
@@ -509,7 +509,7 @@ nav {
     font-size: 10pt;
     transition: all .5s;
     cursor: pointer;
-    background: #E31B6D;
+    background: #008B8B;
     color: #fff;
     font-weight: 600;
     border: 0;
@@ -522,7 +522,7 @@ nav {
       pointer-events: initial;
       visibility: visible; }
     .modal-wrap .button:hover {
-      color: #E31B6D;
+      color: #008B8B;
       background: #fff; }
   .modal-wrap .carousel {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25); }
@@ -550,7 +550,7 @@ section {
     color: #fff;
     height: calc(100vh + 53px); }
     section:nth-of-type(1) .highlight {
-      font-family: 'Raleway-semibold'; }
+      font-family: 'Raleway'; }
     section:nth-of-type(1) .text {
       margin: 0 0 20px 0;
       font-size: 16pt;
@@ -579,7 +579,7 @@ section {
     padding: 0 7px;
     height: 200px; }
   section:nth-of-type(2) .highlight {
-    color: #00CED1; }
+    color: #008B8B; }
   section:nth-of-type(2) .up-arrow {
     margin: 15px 0;
     height: 30px; }
@@ -638,22 +638,22 @@ section {
       top: 0;
       left: 0;
       position: absolute;
-      background-color: #00A1A7;
+      background-color: #008B8B;
       padding: 0;
       opacity: 1; }
     section:nth-of-type(2) .bar .tag {
       top: 0;
       left: 0;
       position: absolute;
-      background-color: #04C2C9;
+      background-color: #008B8B;
       color: #fff;
       height: 100%;
       width: 110px;
       width: 70px; }
     section:nth-of-type(2) .bar.secondary {
-      background-color: #C51675; }
+      background-color: #008B8B; }
       section:nth-of-type(2) .bar.secondary .tag {
-        background-color: #E31B6D; }
+        background-color: #008B8B; }
     section:nth-of-type(2) .bar span {
       z-index: 1;
       padding: 0 15px 0 0; }
@@ -679,7 +679,7 @@ section {
       overflow: hidden;
       height: 50px;
       border-radius: 1px;
-      background: #E31B6D;
+      background: 	#008B8B;
       transition: all .5s ease-in-out; }
       section:nth-of-type(3) .float-bar .row {
         top: 0;
@@ -710,7 +710,7 @@ section {
         bottom: 0;
         left: 0;
         position: absolute;
-        border: 2px solid #E31B6D;
+        border: 2px solid #008B8B;
         width: 170px;
         margin: 0 auto;
         font-size: 13pt;
@@ -722,26 +722,32 @@ display:none;
         section:nth-of-type(3) #gallery .mix .waypoint {
           background: #fff; }
         section:nth-of-type(3) #gallery .mix .button:hover {
-          background: #E31B6D;
+          background: #008B8B;
           color: #fff; }
         section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
-          background: url("images/payitforward.png") center center/cover; }
+          background: url("images/neighbourhoodmap.png") center center/cover;
+           }
         section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
-          background: url("images/django.png") center center/cover; }
+          background: url("images/payitforward.png") center center/cover;
+           }
         section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
-          background: url("images/neighbourhoodmap.png") center center/cover; }
+background: url("images/django.png") center center/cover;
+        }
         section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
-          background: url("images/trailer.png") center center/cover; }
+           background: url("images/resume.png") center center/cover;
+          }
         section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
-          background: url("images/game.png") center center/cover; }
+        background: url("images/deeplearn.jpeg") center center/cover;  }
         section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
-          background: url("images/deeplearn.jpeg") center center/cover; }
+          background: url("images/game.png") center center/cover;
+           }
         section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
-          background: url("images/items.png") center center/cover; }
+background: url("images/angular.png") center center/cover;
+         }
         section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
-          background: url("images/angular.png") center center/cover; }
+          background: url("images/trailer.png") center center/cover;  }
         section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
-          background: url("images/resume.png") center center/cover; }
+             background: url("images/items.png") center center/cover;}
         section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
           background: url("images/logsanalysis.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
@@ -977,7 +983,7 @@ footer {
     height: 100px;
     width: 100px; }
 
-  .slide1, .carousel-wrap {
+  .slide, .carousel-wrap {
     height: 450px; }
 
   .mdi-chevron-left, .mdi-chevron-right {
