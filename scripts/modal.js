@@ -154,13 +154,17 @@ $(document).ready(function(){
     });
 
     console.log(id);
-    $.each($('#modal .slide'), function(index, value) {
+    let str = '<video class="carousel-wrap" autoplay loop muted><source src="styles/images/videos/'+ id+ '.mp4" type="video/mp4" ></video>';
+    $('#modal .window').html(str);
+    /*$.each($('#modal .slide'), function(index, value) {
       console.log(index);
       $(this).css({
-        background: "url('styles/images/slides/" + id + '-' + index + ".png') center center/cover",
+        backgroundcolor: 'red',
+        //background: "url('styles/images/videos/" + id + '-' + index + ".mp4') center center/cover",
         backgroundSize: 'cover'
       });
 
-    });
+    });*/
+
   }
 })

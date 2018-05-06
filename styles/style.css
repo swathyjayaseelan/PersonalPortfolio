@@ -404,12 +404,14 @@ nav {
 .carousel-wrap {
   position: relative;
   height: 250px;
-  margin: 0 auto; }
+  margin: 0 auto;
+width: 100%; }
 
 .window {
   overflow: hidden;
   position: relative;
-  background: #222; }
+  background-color: black;
+   }
 
 #carousel {
   width: 10000px;
