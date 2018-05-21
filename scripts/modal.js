@@ -14,6 +14,13 @@ $(document).ready(function(){
       'tech':'HTML, CSS,  MongoDB, ExpressJS, AngularJS, NodeJS, Bootstrap, Twilio, Facebook APIs, Google Maps API',
       link: 'https://payitforwardversion1.herokuapp.com/#!/home'
     },
+    hgn: {
+      title: 'Reporting Tool',
+      tag: 'INTERACTIVE ANALYTICAL TOOL.',
+      detail: 'Interactive analytical tools that will allow OneCommunity Volunteer Organization to run diverse and details reports.'+
+      'tech: Ember, MongoDB, NodeJS, ExpressJS, Google Charts',
+      link: 'https://hgnwebapp.azurewebsites.net/'
+    },
     easybuy: {
       title: 'EasyBuy',
       tag: 'ECOMMERCE WEBSITE.',

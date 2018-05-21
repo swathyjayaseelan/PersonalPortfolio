@@ -732,29 +732,32 @@ display:none;
         section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
           background: url("images/payitforward.png") center center/cover;
            }
-        section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
+           section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
+             background: url("images/hgn.png") center center/cover;
+              }
+        section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
 background: url("images/django.png") center center/cover;
         }
-        section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
+        section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
            background: url("images/resume.png") center center/cover;
           }
-        section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
-        background: url("images/deeplearn.jpeg") center center/cover;  }
         section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
+        background: url("images/deeplearn.jpeg") center center/cover;  }
+        section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
           background: url("images/game.png") center center/cover;
            }
-        section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
+        section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
 background: url("images/angular.png") center center/cover;
          }
-        section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
-          background: url("images/trailer.png") center center/cover;  }
         section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
-             background: url("images/items.png") center center/cover;}
+          background: url("images/trailer.png") center center/cover;  }
         section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
-          background: url("images/logsanalysis.png") center center/cover; }
+             background: url("images/items.png") center center/cover;}
         section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
-          background: url("images/loganalysis.png") center center/cover; }
+          background: url("images/logsanalysis.png") center center/cover; }
         section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
+          background: url("images/loganalysis.png") center center/cover; }
+        section:nth-of-type(3) #gallery .mix:nth-child(13) .card {
           background: url("../img/thumb-12.jpg") center center/cover; }
         section:nth-of-type(3) #gallery .mix .card {
           height: 240px;
